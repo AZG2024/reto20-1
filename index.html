@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 30rem;
+        gap: 2em;
+        display: flex;
+        border-radius: 25px;
+        border: solid black 2px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #4072ed 40%, white 30%);
+        padding: 1rem;
+        max-height: 750px;
+      }
+      .data {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+        gap: 1em;
+      }
+      .name {
+        font-size: 2em;
+      }
+      .imagen {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 6em;
+      }
+      .imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 1em;
+      }
+      .link {
+        font-size: 1.2em;
+      }
+      .nombre {
+        font-style: italic;
+        font-weight: 700;
+      }
+      .botones {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+      }
+      .boton1 {
+        padding: 1em 2em;
+        background-color: #4072ed;
+        color: white;
+        border-radius: 5%;
+        font-weight: bold;
+        border: navajowhite;
+      }
+      .boton2 {
+        padding: 1em 2em;
+        background-color: #4072ed;
+        color: white;
+        font-weight: bold;
+        border-radius: 5%;
+        border: navajowhite;
+      }
+      .boton1:hover,
+      .boton2:hover {
+        cursor: pointer;
+      }
+      @media (max-width: 550px) {
+        .container {
+          margin: 1em;
+        }
+        .nombre {
+          margin-top: 2.5em;
+        }
+        .imagen {
+          margin-top: 1em;
+        }
+      }
+    </style>
+    <div class="container">
+      <div class="imagen">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="at"
+          class="container-img"
+        />
+      </div>
+      <div class="data">
+        <p class="nombre">Amancio Ortega</p>
+        <span class="name">CodiGo</span>
+        <span class="trabajo">
+          Soy un programador junior con experiencia en desarrollo de software,
+          buscando continuamente mejorar mis habilidades técnicas y
+          colaborativas en proyectos desafiantes.
+        </span>
+      </div>
+      <div class="botones">
+        <button class="boton1">Enviar Mensaje</button>
+        <button class="boton2">Contratar</button>
+      </div>
+      <div class="botones link">
+        <i class="bx bxl-facebook link"></i>
+        <i class="bx bxl-instagram link"></i>
+        <i class="bx bxl-twitter link"></i>
+        <i class="bx bxl-youtube link"></i>
+      </div>
+    </div>
+  </body>
+</html>
